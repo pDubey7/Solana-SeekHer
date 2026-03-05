@@ -1,4 +1,4 @@
-package com.solseekher
+package com.seekher
 
 import android.os.Build
 import android.os.Bundle

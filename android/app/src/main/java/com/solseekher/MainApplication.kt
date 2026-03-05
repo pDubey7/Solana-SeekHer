@@ -1,4 +1,4 @@
-package com.solseekher
+package com.seekher
 
 import android.app.Application
 import android.content.res.Configuration

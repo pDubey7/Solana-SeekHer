@@ -1,7 +1,8 @@
 {
   "expo": {
-    "name": "SolSeekHer",
-    "slug": "SolSeekHer",
+    "name": "SeekHer",
+    "slug": "seekher",
+    "displayName": "SeekHer",
     "version": "1.0.0"
   }
 }
