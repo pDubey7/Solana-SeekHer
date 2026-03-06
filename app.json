@@ -1,8 +1,15 @@
 {
+  "name": "SeekHer",
+  "displayName": "SeekHer",
   "expo": {
     "name": "SeekHer",
     "slug": "seekher",
-    "displayName": "SeekHer",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": ["android"],
+    "android": {
+      "package": "com.seekher.app",
+      "versionCode": 1
+    }
   }
 }

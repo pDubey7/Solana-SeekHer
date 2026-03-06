@@ -1,0 +1,16 @@
+diff --git a/node_modules/react-native-reanimated/plugin/index.js b/node_modules/react-native-reanimated/plugin/index.js
+index 0f5fd05..9181d9d 100644
+--- a/node_modules/react-native-reanimated/plugin/index.js
++++ b/node_modules/react-native-reanimated/plugin/index.js
+@@ -1,4 +1,10 @@
+ // @ts-ignore plugin type isn't exposed
+-const plugin = require('react-native-worklets/plugin');
++let plugin;
++try {
++    plugin = require('react-native-worklets/plugin');
++} catch (e) {
++    // Ignore missing worklets plugin during Expo autolinking resolution
++    plugin = function () { return {}; };
++}
+ 
+ module.exports = plugin;

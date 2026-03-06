@@ -5,6 +5,18 @@ module.exports = function (api) {
         plugins: [
             // NativeWind (Tailwind for React Native)
             'nativewind/babel',
+            // Environment variables from .env file
+            [
+                'module:react-native-dotenv',
+                {
+                    moduleName: '@env',
+                    path: '.env',
+                    blacklist: null,
+                    whitelist: null,
+                    safe: false,
+                    allowUndefined: true,
+                },
+            ],
             // Path alias resolution — must match tsconfig.json paths
             [
                 'module-resolver',
